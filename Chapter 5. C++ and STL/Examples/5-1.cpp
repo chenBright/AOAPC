@@ -23,15 +23,15 @@ int main() {
 		for (int i = 0; i < n; ++i) {
 			scanf("%d", &a[i]);
 		}
-		// 排序
+			// 排序
 		sort(a, a + n);
 		while (q--) {
 			scanf("%d", &x);
-			int p = lower_bound(a, a + n, x); // 在已排序的数组a中查找x
+			int p = lower_bound(a, a + n, x) - a; // 在已排序的数组a中查找x
 			if (a[p] == x) {
-				printf("%d found at %d\n", &x, &p);
+				printf("%d found at %d\n", x, p);
 			} else {
-				printf("%d not found\n");
+				printf("%d not found\n", x);
 			}
 		}
 	}
