@@ -7,7 +7,8 @@ using namespace std;
 
 const int maxn = 10000;
 
-int main() {
+int main()
+{
 	/**
 	 * n 大理石数量
 	 * q 问题数量
@@ -18,19 +19,25 @@ int main() {
 	int n, q, x, a[maxn], kcase = 0;
 
 	// 循环测试多个例子
-	while (scanf("%d%d", &n, &q) == 2 && n) {
+	while (scanf("%d%d", &n, &q) == 2 && n)
+	{
 		printf("CASE# %D\n", ++kcase);
-		for (int i = 0; i < n; ++i) {
+		for (int i = 0; i < n; ++i)
+		{
 			scanf("%d", &a[i]);
 		}
-			// 排序
+		// 排序
 		sort(a, a + n);
-		while (q--) {
+		while (q--)
+		{
 			scanf("%d", &x);
 			int p = lower_bound(a, a + n, x) - a; // 在已排序的数组a中查找x
-			if (a[p] == x) {
+			if (a[p] == x)
+			{
 				printf("%d found at %d\n", x, p);
-			} else {
+			}
+			else
+			{
 				printf("%d not found\n", x);
 			}
 		}
