@@ -1,4 +1,4 @@
-// 题目 UVa 10815 ：https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=835&page=show_problem&problem=1756
+// 题目 UVa 10815 ：https://cn.vjudge.net/problem/UVA-10815
 
 #include <iostream>
 #include <string>

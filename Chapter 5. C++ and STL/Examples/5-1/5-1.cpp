@@ -1,4 +1,4 @@
-// 题目 UVa 10474 ：https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=835&page=show_problem&problem=1415
+// 题目 UVa 10474 ：https://cn.vjudge.net/problem/UVA-10474
 
 #include <cstdio>
 using namespace std;

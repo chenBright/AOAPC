@@ -1,4 +1,4 @@
-// 题目 UVa 101 : https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=835&page=show_problem&problem=37
+// 题目 UVa 101 : https://cn.vjudge.net/problem/UVA-101
 
 #include <iostream>
 using namespace std;
