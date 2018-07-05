@@ -6,6 +6,7 @@
 #include <map>
 #include <vector>
 #include <stack>
+#include <algorithm>
 using namespace std;
 
 #define ALL(x) x.begin(),x.end()
@@ -31,8 +32,28 @@ int main() {
 	for (int i = 0; i < n; ++i) {
 		string op;
 		cin >> op;
-		if (op[0] == 'p') {
+		if (op[0] == 'P') {
 			s.push(ID(Set()));
+		} else if (op[0] == 'D') {
+			s.push(s.top());
+		} else {
+			Set x1 = SetCache[s.top()];
+			s.pop();
+			Set x2 = SetCache[s.top()];
+			s.pop();
+			Set x;
+			if (op[0] == 'U') {
+				set_union(ALL(x1), ALL(x2), INS(x));
+			}
+			if (op[0] == 'I') {
+				set_intersection(ALL(x1), ALL(x2), INS(x));
+			}
+			if (op[0] == 'A') {
+				x = x2;
+				x.insert(ID(x1));
+			}
+			s.push(ID(x));
 		}
 	}
+	cout << SetCache[s.top()].size() << endl;
 }
