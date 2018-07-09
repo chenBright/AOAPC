@@ -1,7 +1,4 @@
-/**
- * UVa12096 - The SetStack Computer
- * https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=835&page=show_problem&problem=3248
- */
+// 题目 UVa 12096 ：https://cn.vjudge.net/problem/UVA-12096
 #include <cstdio>
 #include <set>
 #include <stack>
