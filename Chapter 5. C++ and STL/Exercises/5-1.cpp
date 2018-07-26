@@ -1,10 +1,7 @@
 // 题目 UVa 1593 ：https://cn.vjudge.net/problem/UVA-1593
 
 #include <iostream>
-#include <vector>
-#include <queue>
 #include <sstream>
-#include <algorithm>
 using namespace std;
 
 const int maxn = 1000;
