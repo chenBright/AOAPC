@@ -15,10 +15,9 @@ struct Point
     }
 };
 
-set<Point> dots;
-
 int main()
 {
+    set<Point> dots;
     int T; // 测试用例的数量
     cin >> T;
 
@@ -35,10 +34,10 @@ int main()
         }
 
         bool isSymmetry = true;
-        int s = dots.begin()->x + dots.end()->x; // 如果对称，对应点相加是同一个值
+        int s = dots.begin()->x + dots.rbegin()->x; // 如果对称，对应点相加是同一个值
 
         set<Point>::iterator it;
-        for (int it = dots.begin(); it != dots.end(); ++it)
+        for (it = dots.begin(); it != dots.end(); ++it)
         {
             Point p(s - it->x, it->y);
             if (!dots.count(p))
