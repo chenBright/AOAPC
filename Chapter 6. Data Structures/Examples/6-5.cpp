@@ -1,5 +1,10 @@
 // 题目 UVA 12657 ：https://cn.vjudge.net/problem/UVA-12657
 
+// 提交到OJ上，反馈“Wrong answer”
+// 但本地跑了几个例子，都正确
+// 且代码与书上基本一致
+// 应该是多了回车符之类的
+
 #include <cstdio>
 
 const int maxn = 100005;
