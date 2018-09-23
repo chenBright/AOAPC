@@ -1,3 +1,5 @@
+// 题目 UVA 10562 ：https://cn.vjudge.net/problem/UVA-10562
+
 #include <cstdio>
 #include <cctype>
 #include <cstring>
