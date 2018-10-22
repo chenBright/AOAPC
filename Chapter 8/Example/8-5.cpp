@@ -13,7 +13,7 @@ int main()
         for (int i = 0; i < n; ++i)
         {
             cin >> temp;
-            ans += abs(last);
+            ans += abs(last); // 无论是整数还是负数，都需要运输
             last += temp;
         }
         cout << ans << endl;
